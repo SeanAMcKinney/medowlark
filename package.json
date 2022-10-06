@@ -1,0 +1,15 @@
+{
+  "name": "medowlark",
+  "version": "1.0.0",
+  "description": "Travel Site",
+  "main": "medowlark.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sean McKinney",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6"
+  }
+}

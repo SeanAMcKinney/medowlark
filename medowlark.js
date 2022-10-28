@@ -1,6 +1,7 @@
 const express = require('express')
 const expressHandlebars = require('express-handlebars')
 const fortune = require('./library/fortune')
+const handlers = require('./library/handlers')
 
 const app = express()
 
@@ -40,3 +41,12 @@ app.use((err, req, res, next) => {
     res.send('500 - Server Error')
 })
 
+app.get('/', handlers.home)
+
+app.get('/', handlers.about)
+
+// Custom 404 page
+app.get('/', handlers.notFound)
+
+// Custom 500 page
+app.get('/', handlers.serverError)
